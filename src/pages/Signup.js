@@ -7,7 +7,7 @@ export default function Signup() {
   const passwordConfirmRef = useRef();
   return (
     <>
-      <Card>
+      <Card className="mt-3">
         <Card.Body>
           <h2 className="w-100 text-center mt-2">Register Account</h2>
           <Form>
@@ -35,10 +35,10 @@ export default function Signup() {
                 type="password"
                 ref={passwordConfirmRef}
                 required
-                placeholder="Enter Email"
+                placeholder="Enter Password"
               ></Form.Control>
             </Form.Group>
-            <Button className="w-100" type="submit">
+            <Button className="w-100 mt-2" type="submit">
               Sign Up
             </Button>
           </Form>
